@@ -11,15 +11,14 @@ async function bootstrap() {
         client: {
           brokers: ['localhost:9092'],
         },
-       consumer: {
-        groupId: 'booking_notification'
-       }
+        consumer: {
+          groupId: 'booking_notification',
+        },
       },
-    }
+    },
   );
 
-app.listen();
-
+  app.listen();
 }
 
 bootstrap();
